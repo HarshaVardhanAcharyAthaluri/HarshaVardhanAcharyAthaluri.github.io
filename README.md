@@ -2,4 +2,3 @@
 Check My Repositories [editor on GitHub](https://github.com/HarshaVardhanAcharyAthaluri) 
 ### Markdown
 # This is all about My Tech Experiments and Learning
-![Image of Yaktocat](https://github.com/HarshaVardhanAcharyAthaluri/HarshaVardhanAcharyAthaluri.github.io/blob/master/githubprofile.jpg)
