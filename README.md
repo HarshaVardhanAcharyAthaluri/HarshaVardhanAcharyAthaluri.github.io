@@ -49,22 +49,22 @@ set trimout on
 set tab off
 
 # Certificate generation with openssl
-<b>The following commands are needed to create a root certificate:</b>
-openssl genrsa -des3 -out rootCA.key 2048
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024  -out rootCA.pem
-<b>The following commands are needed to create an SSL certificate issued by the self created root certificate:</b>
-openssl req -new -nodes -out server.csr -newkey rsa:2048 -keyout server.key
-openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext
-The referenced v3.ext file should look something like this:
-authorityKeyIdentifier=keyid,issuer
-basicConstraints=CA:FALSE
-keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
-subjectAltName = @alt_names
-[alt_names]
-DNS.1 = acme-site.dev
-DNS.2 = acme-static.dev
-In order to bundle the server certificate and private key into a single file the following command needs to be executed:
-openssl pkcs12 -inkey server.key -in server.crt -export -out server.pfx
+<b>The following commands are needed to create a root certificate:</b><br>
+openssl genrsa -des3 -out rootCA.key 2048<br>
+openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024  -out rootCA.pem<br>
+<b>The following commands are needed to create an SSL certificate issued by the self created root certificate:</b><br>
+openssl req -new -nodes -out server.csr -newkey rsa:2048 -keyout server.key<br>
+openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile v3.ext<br>
+The referenced v3.ext file should look something like this:<br>
+authorityKeyIdentifier=keyid,issuer<br>
+basicConstraints=CA:FALSE<br>
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment<br>
+subjectAltName = @alt_names<br>
+[alt_names]<br>
+DNS.1 = acme-site.dev<br>
+DNS.2 = acme-static.dev<br>
+In order to bundle the server certificate and private key into a single file the following command needs to be executed:<br>
+openssl pkcs12 -inkey server.key -in server.crt -export -out server.pfx<br>
 
 # Liked color Schema
 `rgb(0, 133, 161)
