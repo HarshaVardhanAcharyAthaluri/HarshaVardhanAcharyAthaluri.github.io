@@ -1,4 +1,5 @@
 # This is all about My Tech Experiments and Learning.
+[My image](https://avatars0.githubusercontent.com/u/27678719?s=400&u=a35865d957c3202f57357730042eba33fd4cd97d&v=4)
 # MyExperimentsKeyPoints
 
 This repository for my tech observations and listing out my key notes
