@@ -6,11 +6,9 @@ This repository for my tech observations and listing out my key notes
 If you want to insatll any ssl in java key store i got a good open source key store software.
 <b>portecle-1.11</b>
 <h2>TOMCAT HANGING ISSUE</h2>
-If the tomcat was hanged in the stopping position while you are running tomcat as awindows service below command will help you
-sc queryex
-list all services in windows
-sc queryex tomcat8
-list tomcat details find the processid of tomcat
+If the tomcat was hanged in the stopping position while you are running tomcat as awindows service below command will help you<br>
+sc queryex - list all services in windows<br>
+sc queryex tomcat8 - list tomcat details find the processid of tomcat<br>
 taskkill /PID 2340 /F
 
 # Open JDK Github URL
@@ -21,32 +19,32 @@ https://github.com/ojdkbuild/ojdkbuild
 # Generate Keystore:
 C:\localhostCerts>keytool -genkey -alias server-alias -keyalg RSA -keypass welcome -storepass welcome -keystore localhost.jks<br>
 
-keytool -export -alias server-alias -storepass welcome -file server.cer -keystore localhost.jks 
-you will get below message
-Certificate stored in file <server.cer>
-refer:
-http://javakafunda.blogspot.com/2012/04/how-to-configure-tomcat-to-support-ssl.html
+keytool -export -alias server-alias -storepass welcome -file server.cer -keystore localhost.jks <br>
+you will get below message<br>
+Certificate stored in file <server.cer><br>
+refer:<br>
+http://javakafunda.blogspot.com/2012/04/how-to-configure-tomcat-to-support-ssl.html<br>
 for javakeytool anf ssl
-#https://sites.google.com/site/ddmwsst/create-your-own-certificate-and-ca
+#https://sites.google.com/site/ddmwsst/create-your-own-certificate-and-ca<br>
 
 
-Making windows target machine accesble.
-winrm set winrm/config/client/auth '@{Basic="true"}'
-winrm set winrm/config/service/auth '@{Basic="true"}'
+Making windows target machine accesble.<br>
+winrm set winrm/config/client/auth '@{Basic="true"}'<br>
+winrm set winrm/config/service/auth '@{Basic="true"}'<br>
 
 # Generating Certificate and key from existing keystore
-<b>certifictae</b> 
-openssl pkcs12 -in keystore.p12  -nokeys -out server.crt 
-<b>key</b>
-openssl pkcs12 -in keystore.p12  -nodes -nocerts -out server.key
+<b>certifictae</b> <br>
+openssl pkcs12 -in keystore.p12  -nokeys -out server.crt <br>
+<b>key</b><br>
+openssl pkcs12 -in keystore.p12  -nodes -nocerts -out server.key<br>
  
 # Generating keystore from existing crt and key
 openssl pkcs12 -export -in server.crt -inkey server.key -out keystore.p12
 
 # When oracle sql* plus not showing properly
-set lines 256
-set trimout on
-set tab off
+set lines 256 <br>
+set trimout on <br>
+set tab off <br>
 
 # Certificate generation with openssl
 <b>The following commands are needed to create a root certificate:</b><br>
