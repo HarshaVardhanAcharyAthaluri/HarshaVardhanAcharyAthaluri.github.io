@@ -1,6 +1,6 @@
 # This is all about My Tech Experiments and Learning.
 
-![Profile](https://github.com/HarshaVardhanAcharyAthaluri/HarshaVardhanAcharyAthaluri.github.io/blob/master/profile.jpg)
+
 
 # MyExperimentsKeyPoints
 
