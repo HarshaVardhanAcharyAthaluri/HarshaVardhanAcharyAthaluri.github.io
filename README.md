@@ -107,5 +107,7 @@ Just add the property responseSkew to the WebSSOProfileConsumerImpl and SingleLo
 to share quick video demo and convert to gif 
 https://www.screentogif.com/
 
+# Taiko
+Taiko is a free and open source browser automation tool built by the team behind Gauge from ThoughtWorks.
 
 Check My Repositories [HarshaVardhan's GitHub](https://github.com/HarshaVardhanAcharyAthaluri) 
