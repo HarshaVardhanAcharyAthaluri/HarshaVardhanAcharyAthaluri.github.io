@@ -110,4 +110,7 @@ https://www.screentogif.com/
 # Taiko
 Taiko is a free and open source browser automation tool built by the team behind Gauge from ThoughtWorks.
 
+# Uaa Specifications(UAA.yml config details)
+https://github.com/cloudfoundry/uaa-release/blob/develop/jobs/uaa/spec
+
 Check My Repositories [HarshaVardhan's GitHub](https://github.com/HarshaVardhanAcharyAthaluri) 
