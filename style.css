@@ -12,6 +12,18 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
     color: #7A7C80;
+    width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    #101214 0vh 0vw,
+    #101214 45vh 45vw,
+    #014c47 45vh 45vw,
+    #014c47 100vh 100vw
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -54,7 +66,10 @@ a{
     font-size: 1.7rem;
     margin-bottom: 10px;
 }
-
+.section-2 h3{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
 .section-2 p{
     font-size: 1.1rem;
     padding-bottom: 10px;
