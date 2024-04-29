@@ -11,7 +11,7 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
-    color: #b6b6b7;
+    color: #fff;
     width: 100%;
   min-height: 100vh;
   background: linear-gradient(
@@ -34,7 +34,7 @@ h3,.white{
     color: #fff;
 }
 a{
-    color: #7A7C80;
+    color: #fff;
     text-decoration: none;
 }
 /* section 1 */
@@ -117,5 +117,6 @@ a{
         padding: 0;
         padding-left: 1.5rem;
         padding-top: 2rem;
+		margin-top: -250px;
     }
 }
