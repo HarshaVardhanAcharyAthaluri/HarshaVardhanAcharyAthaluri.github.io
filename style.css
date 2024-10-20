@@ -22,14 +22,9 @@ body {
     color: white;
   }
   .side-profile img {
-    width: 180px; /* Bigger square image */
+    width: 180px; 
     height: 180px;
-    border-radius: 10px; /* Square image with soft rounded corners */
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-  }
-  .side-profile img:hover {
-    transform: scale(1.1);
+    margin-bottom: 10px;
   }
   .side-profile h1 {
     font-size: 1.5rem;
@@ -60,7 +55,6 @@ body {
   /* Main Content Section */
   .main-content {
     margin-left: 250px;
-    padding: 40px;
   }
   
   /* Section Layout */
